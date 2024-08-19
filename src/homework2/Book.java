@@ -28,6 +28,6 @@ public class Book {
     }
 
     public String getDetails() {
-        return String.format("%s (published in %d), by %s > %.2f RON", getTitle(), getYear(), getAuthor().getName(), getPrice());
+        return getTitle() + " (" + getYear() + "), by " + getAuthor().getName() + " > " + getPrice() + " RON";
     }
 }
